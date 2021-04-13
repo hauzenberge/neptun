@@ -1,0 +1,44 @@
+button:active,
+button:focus {
+  outline: none; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
+a:active,
+a:focus {
+  outline: none; }
+
+input,
+textarea {
+  outline: none; }
+
+input:active,
+textarea:active {
+  outline: none; }
+
+:focus {
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+textarea {
+  resize: vertical; }
+
+textarea {
+  resize: horizontal; }
+
+input {
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+button {
+  cursor: pointer;
+  border: none; }
+
+a {
+  text-decoration: none;
+  transition: .3s; }

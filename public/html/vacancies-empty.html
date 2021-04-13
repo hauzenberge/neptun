@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Neptune</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!--build:css ../css/styles.min.css-->
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link async title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <link rel="stylesheet" href="../css/add.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <!--endbuild-->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="responsive_wrapper">
+            <div class="inside">
+                <nav>
+                    <ul class="nav_list">
+                        <li>
+                            <a href="">
+                                <i class="angle">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-2x"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path></svg>
+                                </i> Про проект
+                            </a>
+                            <ul class="inside_list">
+                                <li>
+                                    <a href="">Переваги</a>
+                                </li>
+                                <li>
+                                    <a href="">Команда</a>
+                                </li>
+                                <li>
+                                    <a href="">Партнери</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Галарея</a>
+                        </li>
+                        <li>
+                            <a href="">Новини</a>
+                        </li>
+                        <li>
+                            <a href="">Документи</a>
+                        </li>
+                        <li>
+                            <a href="">Вакансії</a>
+                        </li>
+                        <li>
+                            <a href="">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="" class="logo">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                <div class="right_side">
+                    <nav>
+                        <ul class="nav_list">
+                            <li>
+                                <a href="">
+                                    <i class="angle">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-2x"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path></svg>
+                                    </i> Про проект
+                                </a>
+                                <ul class="inside_list">
+                                    <li>
+                                        <a href="">Переваги</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Команда</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Партнери</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Галарея</a>
+                            </li>
+                            <li>
+                                <a href="">Новини</a>
+                            </li>
+                            <li>
+                                <a href="">Документи</a>
+                            </li>
+                            <li>
+                                <a href="" class="active">Вакансії</a>
+                            </li>
+                            <li>
+                                <a href="">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="menu_mob_but">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="vacancies_main">
+                <img src="../img/back1.png" alt="" class="back_img">
+                <div class="overlay"></div>
+                <div class="container">
+                    <h1>Вакансії</h1>
+                    <p>Приєднуйтесь до нашої команди професіоналів </p>
+                </div>
+            </section>
+            <section class="actual_vacancies">
+                <div class="container">
+                    <div class="left_side">
+                        <h2 style="margin-bottom: 0px;">На даний момент вільних вакансії немає</h2>
+                    </div>
+                    <div class="right_side">
+                        <div class="form_outter">
+                            <span class="title">Не знайшли свою вакансію?</span>
+                            <p class="title_p">Час від часу у нас з’являються нові вакансії, тому надсилайте нам своє резюме, і ми обов’язково його розглянемо.</p>
+                            <form action="/ajax/send/job" id="job_form" class="form_item" novalidate="novalidate">
+                                <div class="input_cont">
+                                    <input type="text" class="text_input valid" placeholder="Ім’я" required="" name="name">
+                                </div>
+
+                                <div class="input_cont">
+                                    <input type="text" class="text_input" required="" placeholder="Ваша спеціальність" name="spec">
+                                </div>
+
+                                <div class="input_cont">
+                                    <input type="email" class="text_input" required="" placeholder="Email" name="email">
+                                </div>
+
+                                <div class="input_cont">
+                                    <input type="tel" class="text_input" placeholder="Контактний телефон" required="" name="tel" maxlength="18">
+                                </div>
+
+                                <!-- start download form -->
+                                <div class="bottom_form">
+                                    <div class="download_cont">
+                                        <label>
+                                            <input type="file" name="file" id="file_input" data-max="5242880" data-max-error="Перевищено допустимий розмір файлу (5Мб)" data-error="Непідтримуваний формат файлу (ви можете завантажити: PDF, DOC, DOCX, JPEG)" class="valid" aria-invalid="false">
+                                            <img src="../img/file.svg" alt="" accept="image/x-png,image/gif,image/jpeg" name="photo">
+                                            <p>Прикріпити резюме</p>
+                                        </label>
+                                    </div>
+
+                                    <div class="name_file">
+                                        <a href="" role="button" rel="nofollow" class="remove_file">
+                                            <img src="../img/remove_file.svg" alt="">
+                                        </a>
+                                        <p id="name_file"></p>
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                                <!-- end download form -->
+                                <input type="hidden" class="form_id" name="form_id" value="job_main_form">
+
+                                <button type="submit" class="orange_link"><i class="btn-animation"></i>Надіслати заявку</button>
+
+                                <div class="input_cont send-status"></div>
+                            </form>
+                        </div>
+                        <div class="form_thanks_wrap">
+                            <img src="../img/thanks_img.svg" alt="">
+                            <span>Ваше резюме успішно надіслане!</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts_section">
+                <div class="container">
+                    <div class="left_side">
+                        <h2>Контакти</h2>
+                        <ul class="contacts_list">
+                            <li>
+                                <span class="title">Адреса</span>
+                                <a href="https://www.google.com.ua/maps/place/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+1,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.4656909,30.7557438,17z/data=!3m1!4b1!4m5!3m4!1s0x40c6316451a5da1f:0xf8c467b3949625e8!8m2!3d46.4656872!4d30.7579325?hl=ru"
+                                    class="string_link" target="_blank">Одеська область, Лиманський район, с. Визирка, вул. Морська, 1. </a>
+                                <a href="#map" class="string_link scroll_link">Одеська область, Лиманський район, с. Визирка, вул. Морська, 1. </a>
+                            </li>
+                            <li>
+                                <span class="title">Телефон</span>
+                                <a href="tel:+38 (0482) 300 725" class="string_link">+38 (0482) 300 725</a>
+                            </li>
+                            <li>
+                                <span class="title">Email</span>
+                                <a href="mailto:mail@mv-cargo.com" class="string_link">mail@mv-cargo.com</a>
+                            </li>
+                            <li>
+                                <span class="title">Соц. мережі</span>
+                                <ul class="soc_list">
+                                    <li>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g><g clip-path="url(#clip-1686551E-D113-9A04-88FD-226DCBA0C658)"><path fill="#231f20" d="M14.775 0c8.16 0 14.775 6.616 14.775 14.775 0 8.16-6.615 14.774-14.775 14.774S0 22.934 0 14.775C0 6.616 6.616 0 14.775 0zm4.244 11.491h-2.89V9.594c0-.71.47-.877.802-.877h2.04V5.588l-2.808-.01c-3.118 0-3.828 2.332-3.828 3.826v2.087h-1.803v3.222h1.803v9.124h3.794v-9.124h2.557z"/></g></g></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"><defs><clipPath id="jjzea"><path d="M0 .59h29.55v28.97H0z"/></clipPath></defs><g><g><g><g><path fill="#231f20" d="M8.47 16.297h1.07v5.21h1.034v-5.21h1.069v-.887H8.47z"/></g><g><g><path fill="#231f20" d="M14.815 11.968c.14 0 .251-.036.333-.11a.41.41 0 0 0 .125-.315v-2.7a.317.317 0 0 0-.127-.262.512.512 0 0 0-.331-.101.456.456 0 0 0-.307.101.326.326 0 0 0-.118.263v2.699c0 .136.037.24.111.314.073.075.177.111.314.111"/></g><g><path fill="#231f20" d="M17.093 16.954c.29 0 .512.097.664.288.155.19.23.472.23.84v2.497c0 .318-.071.562-.215.733-.143.17-.353.254-.623.254-.18 0-.342-.032-.48-.098a1.18 1.18 0 0 1-.392-.306v.345h-.927V15.41h.927v1.965c.124-.137.255-.243.392-.314a.924.924 0 0 1 .424-.107zm-.06 1.178c0-.153-.032-.268-.096-.347a.352.352 0 0 0-.282-.116.428.428 0 0 0-.192.045.637.637 0 0 0-.186.137v2.803a.743.743 0 0 0 .214.158c.07.03.142.048.218.048.112 0 .192-.03.245-.095.051-.063.078-.166.078-.31z"/></g><g><path fill="#231f20" d="M13.742 20.418c-.086.097-.18.176-.284.24a.525.525 0 0 1-.255.094c-.087 0-.148-.023-.19-.07-.036-.048-.056-.125-.056-.23V17h-.917v3.762c0 .269.054.466.162.603.107.133.266.2.478.2.173 0 .35-.046.533-.143.184-.097.36-.235.53-.417v.493h.917V17h-.918z"/></g><g><g/><g clip-path="url(#jjzea)"><path fill="#231f20" d="M14.775.59c8.16 0 14.775 6.485 14.775 14.485 0 8-6.616 14.486-14.775 14.486C6.615 29.56 0 23.076 0 15.075 0 7.075 6.615.59 14.775.59zm2.387 11.295c0 .297.061.518.181.664.121.148.3.223.54.223.194 0 .394-.054.599-.16a2.17 2.17 0 0 0 .594-.46v.547h1.033V7.744h-1.033v3.76a1.44 1.44 0 0 1-.318.27.615.615 0 0 1-.288.104c-.096 0-.168-.028-.21-.08-.043-.052-.066-.136-.066-.254v-3.8h-1.032zm-3.835-.44c0 .421.136.757.406 1.007.27.247.63.372 1.08.372.468 0 .834-.121 1.103-.362.265-.24.399-.571.399-.997V8.907c0-.38-.136-.69-.407-.929-.273-.239-.622-.36-1.048-.36-.467 0-.84.116-1.117.34-.277.23-.416.536-.416.92zM9.344 5.984l1.384 4.054V12.7h1.163V9.913l1.353-3.93h-1.182l-.718 2.683h-.074l-.755-2.683zm14.695 11.53c0-1.795-1.483-3.25-3.311-3.25H9.223c-1.83 0-3.312 1.455-3.312 3.25v2.613c0 1.795 1.483 3.251 3.312 3.251h11.505c1.828 0 3.311-1.456 3.311-3.25z"/></g></g><g><path fill="#231f20" d="M19.865 16.89c.42 0 .742.114.967.34.226.229.337.555.337.98v1.149h-1.753v.847c0 .238.03.401.09.494.06.09.164.135.311.135.151 0 .258-.039.319-.116.058-.077.091-.248.091-.513V20h.942v.231c0 .462-.112.81-.345 1.043-.229.233-.571.349-1.029.349-.41 0-.735-.125-.97-.372-.235-.246-.355-.586-.355-1.02V18.21c0-.387.13-.706.39-.951.26-.247.593-.369 1.005-.369zm.362 1.315c0-.19-.033-.326-.097-.404-.062-.084-.165-.124-.305-.124-.146 0-.25.04-.314.124-.065.078-.095.215-.095.404v.454h.811z"/></g></g></g></g></g></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g><g><g><g><path fill="#231f20" d="M14.645 12.45c-1.453 0-2.635 1.199-2.635 2.673 0 1.473 1.182 2.672 2.635 2.672 1.453 0 2.635-1.2 2.635-2.672 0-1.474-1.182-2.673-2.635-2.673"/></g><g><path fill="#231f20" d="M17.958 8.57c.961 0 1.769.305 2.334.884.563.574.86 1.389.86 2.356v6.717c0 .995-.301 1.818-.872 2.384-.565.56-1.381.856-2.36.856h-6.549c-.954 0-1.761-.298-2.334-.863-.587-.577-.897-1.412-.897-2.415v-6.68c0-.987.297-1.809.86-2.376.56-.565 1.367-.863 2.334-.863h6.624m-3.312 10.714c2.262 0 4.103-1.867 4.103-4.161 0-2.295-1.84-4.162-4.103-4.162-2.262 0-4.104 1.867-4.104 4.162 0 2.294 1.842 4.161 4.104 4.161m4.262-7.48a.94.94 0 0 0 .937-.945.94.94 0 0 0-.937-.944.941.941 0 0 0-.936.944c0 .523.42.945.936.945"/></g><g/><g><path fill="#231f20" d="M14.775 0c8.159 0 14.774 6.708 14.774 14.984 0 8.275-6.615 14.984-14.774 14.984C6.615 29.968 0 23.258 0 14.984 0 6.708 6.615 0 14.775 0zm7.844 11.802c0-1.367-.444-2.544-1.286-3.403-.848-.865-2.015-1.323-3.376-1.323h-6.624c-2.788 0-4.663 1.9-4.663 4.726v6.676c0 1.413.465 2.617 1.343 3.48.853.84 2.014 1.284 3.357 1.284h6.55c1.369 0 2.54-.443 3.385-1.28.86-.85 1.314-2.042 1.314-3.446z"/></g></g></g></g></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="form_area">
+                            <span class="form_title">Виникли питання?</span>
+                            <form action="/ajax/send/contact" method="post" id="sendform" enctype="multipart/form-data">
+                                <div class="form_container">
+                                    <div class="inputs_container">
+                                        <div class="input_cont">
+                                            <input type="text" class="text_input valid" placeholder="Ім’я " name="name" required="">
+                                        </div>
+
+                                        <div class="input_cont">
+                                            <input type="email" class="text_input" placeholder="Email " name="email" required="">
+                                        </div>
+                                    </div>
+
+                                    <div class="input_cont">
+                                        <textarea name="message" id="message" cols="40" rows="10" placeholder="Повідомлення"> </textarea>
+                                    </div>
+
+                                    <div class="bottom_form">
+                                        <div class="download_cont">
+                                            <label>
+                                                <input type="file" name="file" id="file_input" data-max="5242880" data-max-error="Перевищено допустимий розмір файлу (5Мб)" data-error="Непідтримуваний формат файлу (ви можете завантажити: PDF, DOC, DOCX, JPEG)" class="valid">
+                                                <img src="../img/file.svg" alt="" accept="image/x-png,image/gif,image/jpeg" name="photo">
+                                                <p>Прикріпити файл</p>
+                                            </label>
+                                        </div>
+
+                                        <div class="name_file">
+                                            <a href="" rel="nofollow" class="remove_file">
+                                                <img src="../img/remove_file.svg" alt="">
+                                            </a>
+                                            <p id="name_file"></p>
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                        <button name="sendMail" type="submit" id="send_input" class="orange_link"><img src="../img/check.svg" alt=""><i class="btn-animation"></i> <span>Відправити повідомлення</span></button>
+                                    </div>
+
+                                    <div class="input_cont send-status"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="map"></div>
+            </section>
+        </main>
+    </div>
+
+    <div class="modal_wrap video_modal" id="video_modal">
+        <div class="modal_container">
+            <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="modal_wrap modal_vacancies" id="modal_vacancies">
+        <div class="modal_vacancies_top">
+            <span class="page_name">Вакансії</span>
+            <span class="close_modal_link">
+                <img src="../img/close_modal_white_icon.svg" alt="">
+            </span>
+        </div>
+        <div class="modal_container modal_container_text active">
+            <div class="inner">
+                <span class="title">Назва вакансії 2</span>
+                <form action="/ajax/send/job" id="job_form2" class="form_item" novalidate="novalidate">
+                    <div class="input_cont">
+                        <input type="text" class="text_input valid" placeholder="Ім’я" required="" name="name">
+                    </div>
+
+                    <div class="input_cont">
+                        <input type="email" class="text_input" required="" placeholder="Email" name="email">
+                    </div>
+
+                    <div class="input_cont">
+                        <input type="tel" class="text_input" placeholder="Контактний телефон" required="" name="tel" maxlength="18">
+                    </div>
+
+                    <!-- start download form -->
+                    <div class="bottom_form">
+                        <div class="download_cont">
+                            <label>
+                                <input type="file" name="file" id="file_input2" data-max="5242880" data-max-error="Перевищено допустимий розмір файлу (5Мб)" data-error="Непідтримуваний формат файлу (ви можете завантажити: PDF, DOC, DOCX, JPEG)" class="valid" aria-invalid="false">
+                                <img src="../img/file.svg" alt="" accept="image/x-png,image/gif,image/jpeg" name="photo">
+                                <p>Прикріпити резюме</p>
+                            </label>
+                        </div>
+
+                        <div class="name_file">
+                            <a href="" role="button" rel="nofollow" class="remove_file">
+                                <img src="../img/remove_file.svg" alt="">
+                            </a>
+                            <p id="name_file"></p>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <!-- end download form -->
+                    <input type="hidden" class="form_id" name="form_id" value="job_main_form">
+
+                    <button type="submit" class="orange_link"><i class="btn-animation"></i>Надіслати заявку</button>
+
+                    <div class="input_cont send-status"></div>
+                </form>
+            </div>
+        </div>
+        <div class="modal_container modal_container_thanks hide">
+            <img src="../img/thanks_img.svg" alt="">
+            <p class="thx_text">Ваше резюме успішно надіслане!</p>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxF4nz4Tjr34MakvDvId2Q1AiLYOgngcw"></script>
+    <!-- build:js main.min.js -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/jquery.mask.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/langs_ua.js"></script>
+    <script src="../js/jquery.base64.js"></script>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
